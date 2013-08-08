@@ -1,0 +1,6 @@
+config RTL8192CU_CUSTOM
+	tristate "Realtek 8192C USB WiFi using custom driver"
+	depends on USB
+	---help---
+	  Help message of RTL8192CU
+

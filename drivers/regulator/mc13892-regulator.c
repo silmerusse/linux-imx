@@ -451,8 +451,8 @@ static int mc13892_sw_regulator_set_voltage(struct regulator_dev *rdev,
 		mc13892_regulators[id].vsel_reg, &valread);
 	if (ret)
 		goto err;
-
-	hi  = val & MC13892_SWITCHERS0_SWxHI;
+	
+	hi  = valread & MC13892_SWITCHERS0_SWxHI;
 	if (value > 1375000)
 		hi = 1;
 	if (value < 1100000)
